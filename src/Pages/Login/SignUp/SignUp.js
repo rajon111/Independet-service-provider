@@ -1,9 +1,13 @@
 import { useEffect, useState } from "react";
-import { Button, Card, Form,  Container, ToastContainer } from "react-bootstrap";
-import { useCreateUserWithEmailAndPassword, useSignInWithGoogle } from "react-firebase-hooks/auth";
+import { Button, Card, Form,  Container } from "react-bootstrap";
+import { useCreateUserWithEmailAndPassword, useSignInWithGithub, useSignInWithGoogle, useSendPasswordResetEmail } from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { toast } from "react-toastify";
 import auth from "../../../firebase.init";
+import googlelogo from '../../../images/social/google.png'
+import github from '../../../images/social/github.png'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const SignUp = () => {
     const [userInfo, setUserInfo] = useState({
@@ -20,6 +24,8 @@ const SignUp = () => {
     const [createUserWithEmailAndPassword, user, loading, hookError] =
         useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
     const [signInWithGoogle, googleUser, loading2, googleError] = useSignInWithGoogle(auth);
+    const [signInWithGithub, githubUser, loading3, githubError] = useSignInWithGithub(auth);
+    
 
     const handleEmailChange = (e) => {
         const emailRegex = /\S+@\S+\.\S+/;
@@ -59,23 +65,24 @@ const SignUp = () => {
 
     const handleLogin = (e) => {
       e.preventDefault();
-      console.log(userInfo)
       createUserWithEmailAndPassword(userInfo.email, userInfo.password);
       
   }
 
-  const navigate = useNavigate();
-       const location = useLocation();
-       const from = location.state?.from?.pathname || "/";
 
-      useEffect(() => {
-           if (user) {
-               navigate(from);
-           }
-       }, [user]);
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    const from = location.state?.from?.pathname || "/";
+
+    
+    if (user || googleUser || githubUser) {
+        navigate(from , {replace: true});
+    }
+    
 
     useEffect(() => {
-        const error = hookError || googleError;
+        const error = hookError || googleError || githubError;
         if(error){
             switch(error?.code){
                 case "auth/invalid-email":
@@ -89,7 +96,7 @@ const SignUp = () => {
                     toast("something went wrong")
             }
         }
-    }, [hookError, googleError])
+    }, [hookError, googleError, githubError])
 
 
   return (
@@ -129,7 +136,24 @@ const SignUp = () => {
         <div className="w-100 text-center mt-2">
           Already have an account? <Link to='/login'><span className='text-danger'> Login!</span> </Link>
         </div>
-        <button onClick={() => signInWithGoogle()}>Google</button>
+      
+        <div className="d-flex align-items-center">
+            <div style={{height:'1px'}} className='bg-primary w-50'></div>
+            <p className="mt-2 px-2">Or</p>
+            <div style={{height:'1px'}} className='bg-primary w-50'></div>
+        </div>
+        <div>
+            <button className="btn btn-primary w-50 d-block mx-auto" onClick={() => signInWithGoogle()}>
+              <img style={{width:'30px'}} src={googlelogo} alt="" />
+              <span className="px-4">Google</span>
+            </button>
+        </div>
+        <div className='mt-2'>
+            <button className="btn btn-primary w-50 d-block mx-auto" onClick={() => signInWithGithub()}>
+              <img style={{width:'30px'}} src={github} alt="" />
+              <span className="px-4">Github</span>
+            </button>
+        </div>
       </div>
     </Container>
     
