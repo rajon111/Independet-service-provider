@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import logo from '../../../images/logo.PNG'
 
 const Header = () => {
+   
     return (
         <>
             <Navbar collapseOnSelect expand="lg" sticky='top' bg="primary" variant="dark">
@@ -17,7 +18,7 @@ const Header = () => {
                             
                         </Nav>
                         <Nav>
-                            <Nav.Link as={Link} to="/checkout">Checkout</Nav.Link>
+                            {/* <Nav.Link as={Link} to="/service/:directorId">Checkout</Nav.Link> */}
                             <Nav.Link as={Link} to="/about">About</Nav.Link>
                             <Nav.Link as={Link} to="/login">
                                 Login
