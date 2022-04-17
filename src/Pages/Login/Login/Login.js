@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import { Button, Card, Form, Container, ToastContainer } from "react-bootstrap";
+import { Button, Card, Form, Container} from "react-bootstrap";
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword, useSignInWithGithub, useSignInWithGoogle } from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { toast } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 import auth from "../../../firebase.init";
 import googlelogo from '../../../images/social/google.png'
 import github from '../../../images/social/github.png'
@@ -82,7 +82,7 @@ const Login = () => {
  
 
   useEffect(() => {
-    const error = hookError || googleError;
+    const error = hookError || googleError || githubError;
     if (error) {
       switch (error?.code) {
         case "auth/invalid-email":
@@ -96,7 +96,7 @@ const Login = () => {
           toast("something went wrong")
       }
     }
-  }, [hookError, googleError])
+  }, [hookError, googleError, githubError])
 
 
   return (
@@ -130,7 +130,7 @@ const Login = () => {
             </Card.Body>
           </Card>
           <div className="w-100 text-center mt-2">
-            Don't have an account? <Link to='/signup'><span className='text-primary '> Sign Up!</span> </Link>
+            Don't have an account? <Link to='/signup'><span className='btn btn-link text-primary pe-auto text-decoration-none '> Sign Up!</span> </Link>
           </div>
           <div className="w-100 text-center mt-2">
           <p>Forget Password? <button className='btn btn-link text-primary pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</button> </p>

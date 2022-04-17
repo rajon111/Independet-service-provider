@@ -134,7 +134,7 @@ const SignUp = () => {
           </Card.Body>
         </Card>
         <div className="w-100 text-center mt-2">
-          Already have an account? <Link to='/login'><span className='text-danger'> Login!</span> </Link>
+          Already have an account? <Link to='/login'><span className='btn btn-link text-primary pe-auto text-decoration-none'> Login!</span> </Link>
         </div>
       
         <div className="d-flex align-items-center">
