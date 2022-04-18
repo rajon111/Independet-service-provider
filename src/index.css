@@ -12,3 +12,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* footer */
+footer{
+  padding: 5rem 0;
+    background-color: #182334;
+    color: white;
+}
+footer h2{
+  color: white;
+}
+footer li{
+ list-style: none;
+ color: white;
+ cursor: pointer;
+ margin: 1rem;
+}

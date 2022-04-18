@@ -1,8 +1,7 @@
-import { useAuthState } from 'react-firebase-hooks/auth';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import auth from './firebase.init';
 import About from './Pages/About/About';
+import Blogs from './Pages/Blogs/Blogs';
 import CheckOutDirectorDetail from './Pages/Home/CheckOutDirectorDetail/CheckOutDirectorDetail';
 import Home from './Pages/Home/Home/Home';
 import Login from './Pages/Login/Login/Login';
@@ -26,7 +25,9 @@ function App() {
         <Route path='/checkout' element={<RequireAuth>
           <CheckOutDirectorDetail></CheckOutDirectorDetail>
         </RequireAuth>}></Route>
+        <Route path='blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/about' element={<About/>}></Route>
+        
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
