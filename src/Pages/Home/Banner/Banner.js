@@ -19,7 +19,7 @@ const Banner = () => {
                 alt="First slide"
             />
             <Carousel.Caption>
-                <h3>MAKE ENJOYABLE YOUR LIFE WITH CREATIVE THOUGHTS</h3>
+        
                 <p>Questions are asked only to the ones who can answer it</p>
             </Carousel.Caption>
         </Carousel.Item>
@@ -31,7 +31,7 @@ const Banner = () => {
             />
 
             <Carousel.Caption>
-                <h3>Life is Colurfull! Make More memory ? Stay With Us</h3>
+                
                 <p>The more successful the villain, the more successful the picure.</p>
             </Carousel.Caption>
         </Carousel.Item>
@@ -43,7 +43,7 @@ const Banner = () => {
             />
 
             <Carousel.Caption>
-                <h3>Every Movie Starts With An Idea One Person Refuses TO IGNORE</h3>
+                
                 <p>
                    No Rain,No flowers
                 </p>

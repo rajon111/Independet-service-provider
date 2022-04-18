@@ -76,9 +76,11 @@ const SignUp = () => {
     const from = location.state?.from?.pathname || "/";
 
     
-    if (user || googleUser || githubUser) {
-        navigate(from , {replace: true});
+    useEffect(()=>{
+      if (user || googleUser || githubUser) {
+        navigate(from, { replace: true });
     }
+    },[user,googleUser,githubUser])
     
 
     useEffect(() => {

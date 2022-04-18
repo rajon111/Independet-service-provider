@@ -3,15 +3,15 @@ import React from 'react';
 const Blogs = () => {
     return (
 
-        <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <div className="accordion" id="accordionExample">
+            <div className="accordion-item">
+                <h2 className="accordion-header" id="headingOne">
+                    <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         #1. What are the Difference Between Authentication  And Authorization ?
                     </button>
                 </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
+                <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div className="accordion-body">
                         <div className="row">
                             <div className="col-lg-6 col-sm-12 px-4 py-2">
                                 <h4 className='text-center'>Authentication</h4>
@@ -35,14 +35,14 @@ const Blogs = () => {
                     </div>
                 </div>
             </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    #2. Why are you using firebase? What other options do you have to implement authentication?
+            <div className="accordion-item">
+                <h2 className="accordion-header" id="headingOne">
+                    <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        #2. Why are you using firebase? What other options do you have to implement authentication?
                     </button>
                 </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
+                <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div className="accordion-body">
                         <h4 className='text-success'>Firebase Authentication: </h4> Mainly we used Firebase For authentication purpose. It has saved countless hours of my life since it allows to authenticates your app with the users by doing email/Reset password, letting users sign in/sign up.It supports authentication using passwords, phone numbers, popular federated identity providers like Google, Facebook and Twitter, and more.
                         <hr />
 
@@ -57,14 +57,14 @@ const Blogs = () => {
                     </div>
                 </div>
             </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    #3. What other services does firebase provide other than authentication?
+            <div className="accordion-item">
+                <h2 className="accordion-header" id="headingOne">
+                    <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        #3. What other services does firebase provide other than authentication?
                     </button>
                 </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
+                <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div className="accordion-body">
                         <li> <strong>Firebase Database:</strong>  used to store users data like chat messages, users details and other metadata</li>
                         <li><strong>Firebase Cloud Storage:</strong>  used to store user-generated content like the profile picture, multimedia messages, etc.</li>
                         <li><strong>Firebase Cloud Messaging:</strong> used to send notification</li>
@@ -73,7 +73,7 @@ const Blogs = () => {
                     </div>
                 </div>
             </div>
-            
+
         </div>
 
 

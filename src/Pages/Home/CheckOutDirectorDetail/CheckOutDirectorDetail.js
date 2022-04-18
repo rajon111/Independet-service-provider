@@ -1,8 +1,8 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+// import { useParams } from 'react-router-dom';
 
 const CheckOutDirectorDetail = () => {
-    const {directorId} = useParams()
+    // const {directorId} = useParams()
     
     return (
         <div>

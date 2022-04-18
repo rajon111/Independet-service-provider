@@ -6,10 +6,11 @@ import swriter4 from '../../../images/swriters/swriter-4.jpg'
 import swriter5 from '../../../images/swriters/swriter-5.jpg'
 import swriter6 from '../../../images/swriters/swriter-6.jpg'
 import SingleScriptWriter from '../SingleScriptWriter/SingleScriptWriter';
+import LightSpeed from 'react-reveal/LightSpeed';
 
 const ScriptWriters = () => {
     //local data generate
-    
+
     const scriptWriters =[
         {id:1, name:'Anisul Hoque', description:'Well known writer,teacher and BD cricket team die hard supporter',img: swriter1},
         {id:2, name:'Adnan Al rajeev',description:'Well known writer,natok actor and BD cricket team die hard supporter ' , img: swriter2},
@@ -21,7 +22,10 @@ const ScriptWriters = () => {
 
     return (
         <div className='con'>
-            <h2 className='services-title m-4'>OUR SCRIPTWRITERS</h2>
+            <LightSpeed left>
+                 <h2 className='services-title m-4'>OUR SCRIPTWRITERS</h2>
+            </LightSpeed>
+            
             <div className='services-container'>
                 {
                    scriptWriters.map(scriptWriter => <SingleScriptWriter key={scriptWriter.id} scriptWriter={scriptWriter} ></SingleScriptWriter>) 

@@ -55,7 +55,7 @@ const Login = () => {
   const handleLogin = (e) => {
     e.preventDefault();
 
-    console.log(userInfo)
+    // console.log(userInfo)
 
     signInWithEmail(userInfo.email, userInfo.password);
 
@@ -77,9 +77,11 @@ const Login = () => {
   const from = location.state?.from?.pathname || "/";
 
   
-  if (user || googleUser || githubUser) {
+  useEffect(()=>{
+    if (user || googleUser || githubUser) {
       navigate(from, { replace: true });
   }
+  },[user,googleUser,githubUser])
  
 // error showing part
   useEffect(() => {

@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app";
 import {getAuth} from 'firebase/auth'
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCTPO1whc7_aBeQuHVVG3UrS_BN9b0MVTI",
-  authDomain: "hire-best-creative-director.firebaseapp.com",
-  projectId: "hire-best-creative-director",
-  storageBucket: "hire-best-creative-director.appspot.com",
-  messagingSenderId: "579298699518",
-  appId: "1:579298699518:web:96876d62c761e22fc6ddaf"
+  apiKey:process.env.REACT_APP_apiKey,
+  authDomain:process.env.REACT_APP_authDomain,
+  projectId:process.env.REACT_APP_projectId,
+  storageBucket:process.env.REACT_APP_storageBucket,
+  messagingSenderId:process.env.REACT_APP_messagingSenderId,
+  appId:process.env.REACT_APP_appId,
 };
 
 // Initialize Firebase
