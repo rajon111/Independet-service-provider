@@ -28,12 +28,12 @@ const Login = () => {
     const emailRegex = /\S+@\S+\.\S+/;
     const validEmail = emailRegex.test(e.target.value);
 
-    if (validEmail) {
+  if (validEmail) {
       setUserInfo({ ...userInfo, email: e.target.value })
       setErrors({ ...errors, email: "" })
-    } else {
-      setErrors({ ...errors, email: "Invalid email" })
-      setUserInfo({ ...userInfo, email: "" })
+      } else {
+          setErrors({ ...errors, email: "Invalid email" })
+          setUserInfo({ ...userInfo, email: "" })
     }
 
   }
@@ -61,6 +61,7 @@ const Login = () => {
 
   }
 
+  // reset password part
   const resetPassword = async () =>{
     const email = userInfo.email
     if(email){
@@ -80,7 +81,7 @@ const Login = () => {
       navigate(from, { replace: true });
   }
  
-
+// error showing part
   useEffect(() => {
     const error = hookError || googleError || githubError;
     if (error) {
@@ -130,7 +131,7 @@ const Login = () => {
             </Card.Body>
           </Card>
           <div className="w-100 text-center mt-2">
-            Don't have an account? <Link to='/signup'><span className='btn btn-link text-primary pe-auto text-decoration-none '> Sign Up!</span> </Link>
+            <span className='text-su'>Don't have an account?</span> <Link to='/signup'><span className='btn btn-link text-primary pe-auto text-decoration-none '> Sign Up!</span> </Link>
           </div>
           <div className="w-100 text-center mt-2">
           <p>Forget Password? <button className='btn btn-link text-primary pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</button> </p>
@@ -145,13 +146,13 @@ const Login = () => {
           </div>
 
           <div>
-            <button className="btn btn-primary w-50 d-block mx-auto" onClick={() => signInWithGoogle()}>
+            <button className="btn btn-primary w-75 d-block mx-auto" onClick={() => signInWithGoogle()}>
               <img style={{width:'30px'}} src={googlelogo} alt="" />
               <span className="px-4">Google</span>
             </button>
           </div>
           <div className='mt-2'>
-            <button className="btn btn-primary w-50 d-block mx-auto" onClick={() => signInWithGithub()}>
+            <button className="btn btn-primary w-75 d-block mx-auto" onClick={() => signInWithGithub()}>
               <img style={{width:'30px'}} src={github} alt="" />
               <span className="px-4">Github</span>
             </button>

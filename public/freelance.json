@@ -2,43 +2,46 @@
     {
         "id": 1,
         "name": "Ashfaq Nipun",
-        "demand": "$30000",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/dGDkr4v/1.jpg"
+        "demand": "$40000",
+        "description": "Ashfaque Nipun is a Bangladeshi television director, screenwriter and actor known for directing Mohanagar, Mukim Brothers, Ei Shohore, Landphone er dingulite prem, Miss Shuily, Victim and Eti Maa.",
+        "img": "https://i.ibb.co/GfZNwyN/rsz-nipun-1199x675.jpg"
     },
     {
         "id": 2,
         "name": "Omitab Reza",
         "demand": "$50000",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/tY8dmnP/2.jpg"
+        "description": "Amitabh Reza Chowdhury (Bengali: অমিতাভ রেজা চৌধুরী) is a Bangladeshi filmmaker. In his career, he has directed nearly fifteen hundred (1500) television commercials (henceforth TVCs).",
+        "img": "https://i.ibb.co/R3y4J4S/omitab-reza.jpg"
     },
+    
     {
         "id": 3,
-        "name": "OIL CHANGING",
-        "demand": "150",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/Yh04YVw/3.jpg"
+        "name": "Mostofa Sarwar Farooki",
+        "demand": "$50080",
+        "description": "Mostofa Sarwar Farooki (born 2 May 1973) is a Bangladeshi film director, producer and screenwriter.[2][3] His films Third Person Singular Number, Television, No Bed Of Roses were critically acclaimed across the world and received numerous international and national awards. ",
+        "img": "https://i.ibb.co/wrBDXCc/rsz-1mostofa-sarwar-farooki-at-wikipedia-15-celebration-in-bsk-08.jpg"
     },
     {
         "id": 4,
-        "name": "BRAKE REPARING",
-        "demand": "180",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/ZX2Cbkn/4.jpg"
+        "name": "Animash Aich",
+        "demand": "$35000",
+        "description": "Animesh Aich (born 8 February)[2] is a Bangladeshi film maker, actor, director and writer.As of 2019, he directed three films and several television dramas.He is very active and intelligent and open mind. He is falxibale .",
+        
+        "img": "https://i.ibb.co/PzB4nwg/animesh-aich-0.jpg"
+        
     },
     {
         "id": 5,
-        "name": "WASH AND GLASSING",
+        "name": "Abul Hayat",
         "demand": "100",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/FgQ3jXp/5.jpg"
+        "description": "Abul Hayat (born 7 September 1944)[1] is a Bangladeshi actor. He is also a writer, civil engineer and director.[2] He earned Bangladesh National Film Award for Best Supporting Actor for the film Daruchini Dwip and was awarded Ekushey Padak for his acting in 2015 by the Government of Bangladesh.",
+        "img": "https://i.ibb.co/KbHx1KM/Abul-Hayat13-1.jpg"
     },
     {
         "id": 6,
-        "name": "COMPLETE ANALYSIS",
+        "name": "Redoan Rony",
         "demand": "300",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
-        "img": "https://i.ibb.co/zJy5ZDd/6.jpg"
+        "description": "Redoan Rony is a national award-winning film director, and producer from Bangladesh.[1] He has spent more than a decade in the media industry of Bangladesh. He has directed a few of the most popular TV series of Bangladesh e.g. Housefull, Fnf, Behind The Scene, Pata Jharar Din, etc",
+        "img": "https://i.ibb.co/kMXFC51/redwan-0.jpg"
     }
 ]

@@ -143,13 +143,13 @@ const SignUp = () => {
             <div style={{height:'1px'}} className='bg-primary w-50'></div>
         </div>
         <div>
-            <button className="btn btn-primary w-50 d-block mx-auto" onClick={() => signInWithGoogle()}>
+            <button className="btn btn-primary w-75 d-block mx-auto" onClick={() => signInWithGoogle()}>
               <img style={{width:'30px'}} src={googlelogo} alt="" />
               <span className="px-4">Google</span>
             </button>
         </div>
         <div className='mt-2'>
-            <button className="btn btn-primary w-50 d-block mx-auto" onClick={() => signInWithGithub()}>
+            <button className="btn btn-primary w-75 d-block mx-auto" onClick={() => signInWithGithub()}>
               <img style={{width:'30px'}} src={github} alt="" />
               <span className="px-4">Github</span>
             </button>

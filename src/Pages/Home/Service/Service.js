@@ -13,7 +13,7 @@ const Service = ({ service }) => {
             <p><strong>Booking Demand:</strong> {demand}</p>
             <p><small className='discription'>{description}</small></p>
             <Link to='/checkout'>
-                <button >Checkout</button>
+                <button className='btn btn-danger px-4'>Checkout</button>
             </Link>
         </div>
     );

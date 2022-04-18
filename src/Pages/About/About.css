@@ -1,0 +1,10 @@
+.img-div img{
+    width: 500px;
+    border-radius: 50%;
+}
+.about-container{
+    margin: 0 auto;
+    padding: 0 3rem;
+    text-align: center;
+    
+}

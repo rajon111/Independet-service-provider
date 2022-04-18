@@ -19,8 +19,8 @@ const Banner = () => {
                 alt="First slide"
             />
             <Carousel.Caption>
-                <h3>First slide label</h3>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                <h3>MAKE ENJOYABLE YOUR LIFE WITH CREATIVE THOUGHTS</h3>
+                <p>Questions are asked only to the ones who can answer it</p>
             </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -31,8 +31,8 @@ const Banner = () => {
             />
 
             <Carousel.Caption>
-                <h3>Second slide label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h3>Life is Colurfull! Make More memory ? Stay With Us</h3>
+                <p>The more successful the villain, the more successful the picure.</p>
             </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -43,9 +43,9 @@ const Banner = () => {
             />
 
             <Carousel.Caption>
-                <h3>Third slide label</h3>
+                <h3>Every Movie Starts With An Idea One Person Refuses TO IGNORE</h3>
                 <p>
-                    Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                   No Rain,No flowers
                 </p>
             </Carousel.Caption>
         </Carousel.Item>
