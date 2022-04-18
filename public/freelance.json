@@ -18,30 +18,29 @@
         "id": 3,
         "name": "Mostofa Sarwar Farooki",
         "demand": "$50080",
-        "description": "Mostofa Sarwar Farooki (born 2 May 1973) is a Bangladeshi film director, producer and screenwriter.[2][3] His films Third Person Singular Number, Television, No Bed Of Roses were critically acclaimed across the world and received numerous international and national awards. ",
+        "description": "Mostofa Sarwar Farooki (born 2 May 1973) is a Bangladeshi film director, producer and screenwriter. His films Third Person Singular Number, Television acclaimed across the world and received international and national awards. ",
         "img": "https://i.ibb.co/wrBDXCc/rsz-1mostofa-sarwar-farooki-at-wikipedia-15-celebration-in-bsk-08.jpg"
     },
     {
         "id": 4,
         "name": "Animash Aich",
         "demand": "$35000",
-        "description": "Animesh Aich (born 8 February)[2] is a Bangladeshi film maker, actor, director and writer.As of 2019, he directed three films and several television dramas.He is very active and intelligent and open mind. He is falxibale .",
-        
+        "description": "Animesh Aich (born 8 February)[2] is a Bangladeshi film maker, actor, director and writer.As of 2019, he directed three films and several television dramas.He is very active and intelligent and open mind. He is falxibale and Socail Activist.",  
         "img": "https://i.ibb.co/PzB4nwg/animesh-aich-0.jpg"
         
     },
     {
         "id": 5,
         "name": "Abul Hayat",
-        "demand": "100",
+        "demand": "$180000",
         "description": "Abul Hayat (born 7 September 1944)[1] is a Bangladeshi actor. He is also a writer, civil engineer and director.[2] He earned Bangladesh National Film Award for Best Supporting Actor for the film Daruchini Dwip and was awarded Ekushey Padak for his acting in 2015 by the Government of Bangladesh.",
         "img": "https://i.ibb.co/KbHx1KM/Abul-Hayat13-1.jpg"
     },
     {
         "id": 6,
         "name": "Redoan Rony",
-        "demand": "300",
-        "description": "Redoan Rony is a national award-winning film director, and producer from Bangladesh.[1] He has spent more than a decade in the media industry of Bangladesh. He has directed a few of the most popular TV series of Bangladesh e.g. Housefull, Fnf, Behind The Scene, Pata Jharar Din, etc",
+        "demand": "$30000",
+        "description": "Redoan Rony is a national award-winning film director, and producer from Bangladesh.He has spent more than a decade in the media industry of Bangladesh. He has directed a few of the most popular TV series of Bangladesh e.g. Housefull, Fnf,Pata Jharar Din, etc",
         "img": "https://i.ibb.co/kMXFC51/redwan-0.jpg"
     }
 ]

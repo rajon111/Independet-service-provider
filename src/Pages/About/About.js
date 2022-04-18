@@ -6,7 +6,7 @@ const About = () => {
     return (
         <div className='about-container'>
             
-            <div className='img-div mt-3'>
+            <div className='img-div mt-5'>
                 <img src={image} alt="" />
             </div>
             <h1 className='pt-3'>Golam Mostofa Rajon</h1>

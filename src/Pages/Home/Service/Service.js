@@ -5,7 +5,7 @@ import './Service.css'
 const Service = ({ service }) => {
     // const navigate = useNavigate()
 
-    const { name, demand, img, description, id } = service;
+    const { name, demand, img, description } = service;
     return (
         <div className='director-card'>
             <img className='w-100' src={img} alt="" />
